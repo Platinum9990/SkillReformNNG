@@ -1,0 +1,119 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('images/new.png');
+ 
+}
+
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  max-width: 120px;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a.active {
+  color: #5aae4e;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e6f4ea;
+  padding: 4rem 1rem;
+  text-align: center;
+  background-image: url('images/new.png');
+ 
+}
+
+.hero h1 {
+  color: #5aae4e;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Trainings Section */
+.trainings-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.trainings-section h2 {
+  color: #5aae4e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.training-card {
+  background: #f1fdf4;
+  padding: 1.5rem;
+  border-left: 6px solid #5aae4e;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.training-card h3 {
+  color: #1b4c9c;
+  margin-bottom: 0.5rem;
+}
+
+.training-card p {
+  margin: 0.2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #5aae4e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #4b9541;
+}
