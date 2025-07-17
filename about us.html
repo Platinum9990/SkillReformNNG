@@ -1,167 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
-</head>
-<body>
-    <style>
-    :root {
-      --blue: #0077b6;
-      --green: #00b894;
-      --light-bg: #f0f4f8;
-      --dark-text: #222;
-      --light-text: #555;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - SkillReform NG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styyle2.css" />
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css" />
+    
+    
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--light-bg);
-      color: var(--dark-text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, var(--blue), var(--green));
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-    }
-
-    section h2 {
-      font-size: 2rem;
-      color: var(--blue);
-      margin-bottom: 1rem;
-    }
-
-    section p {
-      margin-bottom: 1rem;
-      color: var(--light-text);
-    }
-
-    .team {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .member {
-      flex: 1 1 250px;
-      background: var(--light-bg);
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .member:hover {
-      transform: translateY(-5px);
-    }
-
-    .member img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-
-    .member h4 {
-      color: var(--green);
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: var(--blue);
-      color: white;
-      margin-top: 4rem;
-    }
-
-    h1, h2, h4 {
-  text-align: center;
-}
-  </style>
+    <script src="https://kit.fontawesome.com/YOUR_UNIQUE_KIT_CODE.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <h1>About Us</h1>
-    <p>SkillReform NG is a platform that makes it easy to find and access skill acquisition opportunities across Nigeria;
-        from tech to crafts, business, and more.</p>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="SkillReform NG Logo" />
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./Training.html">Trainings</a></li> <li><a href="about.html" class="active">About</a></li> <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <section class="text-center">
-    <h2>Our Mission</h2>
-    <p >
-      To simplify access to skill acquisition opportunities in Nigeria.
-      Empowering more people to grow through practical and impactful learning.
+    <section class="page-hero about-hero">
+        <div class="hero-overlay">
+            <h1>About SkillReform NG</h1>
+            <p>Bridging Potential to Purpose: Our Journey to Empower Nigerians.</p>
+        </div>
+    </section>
 
-    <h2>Our Values</h2>
-    <p>
-       Accessibility, impact, empowerment, and collaboration.
-      We believe in helping more Nigerians unlock their potential through skills.
-    </p>
+    <section class="our-mission-section">
+        <div class="container mission-content">
+            <div class="mission-text">
+                <h2 class="section-title">Our Mission</h2>
+                <p>To stand as the **enduring bridge between passion and possibility** by illuminating skill-building paths and growth for every Nigerian, through opportunities that turn potential into purpose.</p>
+                <p>In a fast-evolving world where access to digital and vocational skills defines economic growth, many Nigerians still struggle to find verified, reliable, and timely opportunities for personal and professional development. We bridge this gap, ensuring easy discovery and enrollment in legitimate, hands-on training.</p>
+            </div>
+            <div class="mission-image">
+                <img src="images/mission photo.jpg" alt="SkillReform NG Mission" />
+            </div>
+        </div>
+    </section>
 
-    <h2>Meet the Team</h2>
-    <div class="team">
-      <div class="member">
-        <img src="images/dorcas.jpeg" alt="Dorcas Otubusin">
-        <h4>Dorcas Otubusin</h4>
-        <p>...</p>
-      </div>
-      <div class="member">
-        <img src="images/segun.jpeg" alt="Oluwasegun Dominic">
-        <h4> Oluwasegun Dominic</h4>
-        <p>...</p>
-      </div>
-      <div class="member">
-        <img src="images/victor.jpeg" alt="Victor Ashamu">
-        <h4> Victor Ashamu</h4>
-        <p>...</p>
-      </div>
-    </div>
-  </section>
+    <section class="what-we-do-section">
+        <div class="container">
+            <h2 class="section-title light-text">What We Do</h2>
+            <div class="what-we-do-grid">
+                <div class="do-item">
+                    <span class="do-icon"><i class="fa-solid fa-database"></i></span>
+                    <h3>Aggregating Opportunities</h3>
+                    <p>We are an online discovery platform that aggregates and showcases verified skill empowerment and training opportunities.</p>
+                </div>
+                <div class="do-item">
+                    <span class="do-icon"><i class="fa-solid fa-check-double"></i></span>
+                    <h3>Verified Listings</h3>
+                    <p>We ensure all programs are legitimate, government-approved, or NGO-backed, building trust and reliability.</p>
+                </div>
+                <div class="do-item">
+                    <span class="do-icon"><i class="fa-solid fa-handshake-simple"></i></span>
+                    <h3>Connecting Learners & Trainers</h3>
+                    <p>We create a unified space for small and mid-sized trainers to reach eager learners across the nation.</p>
+                </div>
+                <div class="do-item">
+                    <span class="do-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                    <h3>Hyper-Local Filtering</h3>
+                    <p>Our unique advantage: users can search for trainings based on LGA, state, or even ward, not just big cities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!--footer start-->
-<footer class="site-footer">
-  <p>&copy; 2025 SkillReform NG. All rights reserved.</p>
-  <p>Empowering Nigerians with skills and opportunities.</p>
-  <p>
-    <a href="./SkillReformNG.html(UPDATED).html">Home</a> |
-    <a href="./Training.html">Trainings</a> |
-    <a href="./about us.html">About</a> |
-    <a href="./Contact.html">Contact Us</a>
-  </p>
-</footer>
-<!--footer end-->
+    <section class="target-users-section">
+        <div class="container">
+            <h2 class="section-title">Who We Serve</h2>
+            <div class="user-types-grid">
+                <div class="user-type-card">
+                    <span class="user-icon"><i class="fa-solid fa-user-graduate"></i></span>
+                    <h3>Learners</h3>
+                    <ul>
+                        <li>Nigerians seeking practical skills (tech, tailoring, beauty, etc.)</li>
+                        <li>Graduates needing employable skills.</li>
+                        <li>Women, low-income individuals, and people in rural areas.</li>
+                    </ul>
+                </div>
+                <div class="user-type-card">
+                    <span class="user-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                    <h3>Trainers</h3>
+                    <ul>
+                        <li>Individual or small trainers looking to reach more people.</li>
+                        <li>NGOs and private organizations running training programs.</li>
+                        <li>Coworkspaces offering training facilities.</li>
+                    </ul>
+                </div>
+                <div class="user-type-card">
+                    <span class="user-icon"><i class="fa-solid fa-building-user"></i></span>
+                    <h3>Employers (Future)</h3>
+                    <ul>
+                        <li>Companies looking for skilled, verified talent.</li>
+                        <li>Partners for job matching after program completion.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="our-values-section">
+        <div class="container">
+            <h2 class="section-title light-text">Our Pillars of Strength</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="value-icon"><i class="fa-solid fa-shield-alt"></i></span>
+                    <h4>Trust & Verification</h4>
+                    <p>We are known for our commitment to trust, listing only first-hand verified programs.</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon"><i class="fa-solid fa-location-crosshairs"></i></span>
+                    <h4>Accessibility</h4>
+                    <p>Hyper-local filtering ensures programs are found even where Google doesn't reach.</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                    <h4>Empowerment</h4>
+                    <p>Our goal is to turn potential into purpose, equipping individuals for today’s demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 SkillReform NG. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

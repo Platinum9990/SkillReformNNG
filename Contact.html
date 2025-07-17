@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - SkillReform NG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="./index.html" class="logo">
+                    <img src="images/logo.png" alt="SkillReform NG Logo" />
+                </a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Trainings</a></li> <li><a href="./about us.html">About</a></li> <li><a href="./Contact.html" class="active">Contact</a></li> </ul>
+            </div>
+        </nav>
+    </header>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+    <section class="page-hero contact-hero">
+        <div class="hero-overlay">
+            <h1>Get in Touch with SkillReform NG </h1>
+            <p>We're here to help! Reach out to us for any inquiries, partnerships, or support.</p>
+        </div>
+    </section>
 
-        <button type="submit">Send Message</button>
-    </form>
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <div class="contact-content-wrapper">
+                <form class="contact-form" action="#" method="POST"> <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                    </div>
+                     <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Inquiry about training programs">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"><span>Send Message</span></button>
+                </form>
+
+              <div class="contact-info">
+    <h3>Contact Details</h3>
+    <p>Got questions? We're just a message or call away!</p>
+    <div class="info-item">
+        <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+        <p>Email: <a href="mailto:info@skillreformng.com">info@skillreformng.com</a></p>
+    </div>
+    <div class="info-item">
+        <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+        <p>Phone: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+    </div>
+   
+
+    <h3>Follow Us</h3>
+    <div class="social-links">
+        <a href="YOUR_FACEBOOK_PROFILE_LINK" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="YOUR_TWITTER_PROFILE_LINK" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="YOUR_INSTAGRAM_PROFILE_LINK" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="YOUR_LINKEDIN_PROFILE_LINK" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 SkillReform NG. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/dfa26488d0.js" crossorigin="anonymous"></script>
 </body>
 </html>
