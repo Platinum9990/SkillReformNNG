@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SkillReform NG – Training Programs</title>
   <link rel="stylesheet" href="training.css" />
+  <script defer src="menu.js"></script> <!-- for toggle script -->
 </head>
 <body>
 
   <!-- Header -->
   <header class="site-header">
-    <div class="container">
+    <div class="container header-flex">
       <img src="images/logo.png" alt="SkillReform Logo" class="logo" />
-      <nav>
+      
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      
+      <nav id="nav-menu" class="nav-menu">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about us.html">About</a></li>
@@ -32,56 +36,54 @@
   </section>
 
   <!-- Trainings Section -->
- <!-- Trainings Section -->
-<section class="trainings-section">
-  <div class="container">
-    <h2>Ongoing & Upcoming Trainings</h2>
+  <section class="trainings-section">
+    <div class="container">
+      <h2>Ongoing & Upcoming Trainings</h2>
 
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" placeholder="Search trainings by name, location, or host...">
-      <button type="submit">Search</button>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search trainings by name, location, or host...">
+        <button type="submit">Search</button>
+      </div>
+
+      <!-- Training Cards -->
+      <div class="training-card">
+        <img src="images/digital marketing.jpg" alt="Remote Training" class="training-img">
+        <h3>Remote Work Essentials</h3>
+        <p>Start Date: July 29, 2025</p>
+        <p>Location: Abuja</p>
+        <p>Hosted by: YouthNG</p>
+        <a href="#" class="btn">Apply Now</a>
+      </div>
+
+      <div class="training-card">
+        <img src="images/4.jpg" alt="Tech for Women Program" class="training-img">
+        <h3>Tech for Women Program</h3>
+        <p>Start Date: July 29, 2025</p>
+        <p>Location: Abuja</p>
+        <p>Hosted by: WomenInTech NG</p>
+        <a href="#" class="btn">Sign Up</a>
+      </div>
+
+      <div class="training-card">
+        <img src="images/3.jpg" alt="CV Writing & Job Prep Class" class="training-img">
+        <h3>CV Writing & Job Prep Class</h3>
+        <p>Start Date: Ongoing</p>
+        <p>Location: Lagos</p>
+        <p>Hosted by: CareerBuilders</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#">&laquo; Prev</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next &raquo;</a>
+      </div>
     </div>
-
-    <!-- Training Cards -->
-    <div class="training-card">
-      <img src="images/digital marketing.jpg" alt="Remote Training" class="training-img">
-      <h3>Remote Work Essentials</h3>
-      <p>Start Date: July 29, 2025</p>
-      <p>Location: Abuja</p>
-      <p>Hosted by: YouthNG</p>
-      <a href="#" class="btn">Apply Now</a>
-    </div>
-
-    <div class="training-card">
-      <img src="images/4.jpg" alt="Tech for Women Program" class="training-img">
-      <h3>Tech for Women Program</h3>
-      <p>Start Date: July 29, 2025</p>
-      <p>Location: Abuja</p>
-      <p>Hosted by: WomenInTech NG</p>
-      <a href="#" class="btn">Sign Up</a>
-    </div>
-
-    <div class="training-card">
-      <img src="images/3.jpg" alt="CV Writing & Job Prep Class" class="training-img">
-      <h3>CV Writing & Job Prep Class</h3>
-      <p>Start Date: Ongoing</p>
-      <p>Location: Lagos</p>
-      <p>Hosted by: CareerBuilders</p>
-      <a href="#" class="btn">Learn More</a>
-    </div>
-
-    <!-- Pagination -->
-    <div class="pagination">
-      <a href="#">&laquo; Prev</a>
-      <a href="#" class="active">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">Next &raquo;</a>
-    </div>
-  </div>
-</section>
-
+  </section>
 
 </body>
 </html>
