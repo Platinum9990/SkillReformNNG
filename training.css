@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -8,112 +8,187 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
   color: #333;
-  background-image: url('images/new.png');
- 
+  background-color: #f9f9f9;
+}
+
+/* Brand Colors */
+:root {
+  --green: #5aae4e;
+  --blue: #1c355e;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Header */
 .site-header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
   padding: 1rem 0;
-  border-bottom: 1px solid #eee;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+.site-header .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  height: 50px;
-  max-width: 120px;
+  width: 120px;
+  height: auto;
 }
 
-/* Navigation */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--blue);
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-.nav-links li a.active {
-  color: #5aae4e;
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--green);
 }
 
 /* Hero Section */
 .hero {
-  background-color: #e6f4ea;
-  padding: 4rem 1rem;
+  background: linear-gradient(to right, var(--blue), var(--green));
+  color: #fff;
+  padding: 3rem 0;
   text-align: center;
-  background-image: url('images/new.png');
- 
 }
 
 .hero h1 {
-  color: #5aae4e;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.1rem;
-  color: #444;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #5aae4e;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #4a9640;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #5aae4e;
+  color: white;
+}
+
+.pagination a.active {
+  background-color: #5aae4e;
+  color: white;
 }
 
 /* Trainings Section */
 .trainings-section {
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   background-color: #ffffff;
 }
 
 .trainings-section h2 {
-  color: #5aae4e;
   text-align: center;
-  margin-bottom: 2rem;
   font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--blue);
 }
 
+/* Cards */
 .training-card {
-  background: #f1fdf4;
+  background: #f5f5f5;
   padding: 1.5rem;
-  border-left: 6px solid #5aae4e;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+}
+
+.training-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .training-card h3 {
-  color: #1b4c9c;
+  color: var(--blue);
   margin-bottom: 0.5rem;
 }
 
 .training-card p {
-  margin: 0.2rem 0;
+  margin-bottom: 0.3rem;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #5aae4e;
+  background-color: var(--green);
   color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: #4b9541;
+  background-color: #4b983e;
 }
