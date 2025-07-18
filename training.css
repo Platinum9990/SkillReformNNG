@@ -36,6 +36,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -43,6 +44,17 @@ body {
   height: auto;
 }
 
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -78,7 +90,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Search bar */
+/* Search Bar */
 .search-bar {
   display: flex;
   justify-content: center;
@@ -96,7 +108,7 @@ body {
 
 .search-bar button {
   padding: 10px 20px;
-  background-color: #5aae4e;
+  background-color: var(--green);
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -105,32 +117,6 @@ body {
 
 .search-bar button:hover {
   background-color: #4a9640;
-}
-
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-  gap: 10px;
-}
-
-.pagination a {
-  padding: 8px 16px;
-  text-decoration: none;
-  background-color: #f4f4f4;
-  color: #333;
-  border-radius: 5px;
-}
-
-.pagination a:hover {
-  background-color: #5aae4e;
-  color: white;
-}
-
-.pagination a.active {
-  background-color: #5aae4e;
-  color: white;
 }
 
 /* Trainings Section */
@@ -191,4 +177,56 @@ body {
 
 .btn:hover {
   background-color: #4b983e;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #5aae4e;
+  color: white;
+}
+
+.pagination a.active {
+  background-color: #5aae4e;
+  color: white;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .site-header .container {
+    align-items: flex-start;
+  }
 }
