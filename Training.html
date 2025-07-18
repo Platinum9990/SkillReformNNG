@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkillReform NG – Training Programs</title>
+
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="training.css" />
-    <script defer src="menu.js"></script>
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container header-flex">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="SkillReform Logo" class="logo" />
-            </a>
-            
-            <button class="hamburger" 
-                    id="hamburger" 
-                    aria-label="Toggle navigation menu" 
-                    aria-controls="nav-menu" 
-                    aria-expanded="false">
-                &#9776;
-            </button>
-            
-            <nav id="nav-menu" class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about%20us.html">About</a></li>
-                    <li><a href="Training.html" class="active">Trainings</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="SkillReform Logo" style="width: 120px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Training.html">Trainings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -45,12 +53,10 @@
         <section class="trainings-section">
             <div class="container">
                 <h2 class="section-title">Ongoing & Upcoming Trainings</h2>
-
                 <div class="search-bar">
                     <input type="text" placeholder="Search trainings by name, location, or host...">
                     <button type="submit">Search</button>
                 </div>
-
                 <div class="trainings-grid">
                     <div class="training-card">
                         <img src="images/digital%20marketing.jpg" alt="Remote Training" class="training-img">
@@ -60,7 +66,6 @@
                         <p>Hosted by: YouthNG</p>
                         <a href="#" class="btn">Apply Now</a>
                     </div>
-
                     <div class="training-card">
                         <img src="images/4.jpg" alt="Tech for Women Program" class="training-img">
                         <h3>Tech for Women Program</h3>
@@ -69,7 +74,6 @@
                         <p>Hosted by: WomenInTech NG</p>
                         <a href="#" class="btn">Sign Up</a>
                     </div>
-
                     <div class="training-card">
                         <img src="images/3.jpg" alt="CV Writing & Job Prep Class" class="training-img">
                         <h3>CV Writing & Job Prep Class</h3>
@@ -79,9 +83,7 @@
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
-
                 <p id="no-results" style="text-align: center; display: none; margin: 2rem 0;">No trainings found matching your search.</p>
-
                 <div class="pagination">
                     <a href="#">&laquo; Prev</a>
                     <a href="#" class="active">1</a>
@@ -93,5 +95,6 @@
         </section>
     </main>
 
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
