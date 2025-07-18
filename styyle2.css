@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -6,229 +6,189 @@
 }
 
 body {
-  font-family: 'Inter', 'Poppins', sans-serif;
-  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   color: #333;
-  line-height: 1.7;
+  background-color: #f9f9f9;
 }
 
-/* Navbar Styles */
-.navbar {
+/* Brand Colors */
+:root {
+  --green: #5aae4e;
+  --blue: #1c355e;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
   background-color: #ffffff;
-  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.site-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
 }
 
-.navbar .logo img {
-  height: 40px;
+.logo {
+  width: 120px;
+  height: auto;
 }
 
 .nav-links {
+  list-style: none;
   display: flex;
   gap: 1.5rem;
-  list-style: none;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--blue);
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-.nav-links a.active,
-.nav-links a:hover {
-  color: #009688;
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--green);
 }
 
 /* Hero Section */
-.page-hero {
-  background: url('images/bg-white.svg') no-repeat center center/cover;
-  padding: 100px 20px;
-  text-align: center;
+.hero {
+  background: linear-gradient(to right, var(--blue), var(--green));
   color: #fff;
-  position: relative;
+  padding: 3rem 0;
+  text-align: center;
 }
 
-.about-hero {
-  background-color: #009688;
-}
-
-.hero-overlay {
-  max-width: 800px;
-  margin: auto;
-}
-
-.hero-overlay h1 {
-  font-size: 3rem;
-  font-weight: 700;
+.hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-overlay p {
-  font-size: 1.2rem;
-  color: #e0f2f1;
+.hero p {
+  font-size: 1.1rem;
 }
 
-/* Section Title */
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: #009688;
-  position: relative;
-}
-
-.section-title.light-text {
-  color: #333;
-}
-
-/* Mission Section */
-.our-mission-section {
-  padding: 60px 20px;
-  background-color: #f8f8f8;
-}
-
-.mission-content {
+/* Search bar */
+.search-bar {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.mission-text {
-  max-width: 600px;
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
 }
 
-.mission-image img {
-  max-width: 100%;
-  border-radius: 10px;
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #5aae4e;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
-/* What We Do Section */
-.what-we-do-section {
-  padding: 60px 20px;
+.search-bar button:hover {
+  background-color: #4a9640;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #5aae4e;
+  color: white;
+}
+
+.pagination a.active {
+  background-color: #5aae4e;
+  color: white;
+}
+
+/* Trainings Section */
+.trainings-section {
+  padding: 3rem 0;
   background-color: #ffffff;
 }
 
-.what-we-do-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
-
-.do-item {
-  background-color: #f1fefb;
-  padding: 20px;
-  border-radius: 8px;
+.trainings-section h2 {
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--blue);
 }
 
-.do-icon i {
-  font-size: 2rem;
-  color: #009688;
+/* Cards */
+.training-card {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+}
+
+.training-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-/* Target Users Section */
-.target-users-section {
-  padding: 60px 20px;
-  background-color: #f8f8f8;
-}
-
-.user-types-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.user-type-card {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.user-icon i {
-  font-size: 1.8rem;
-  color: #009688;
+.training-card h3 {
+  color: var(--blue);
   margin-bottom: 0.5rem;
 }
 
-/* Our Values Section */
-.our-values-section {
-  padding: 60px 20px;
-  background-color: #ffffff;
+.training-card p {
+  margin-bottom: 0.3rem;
 }
 
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.value-item {
-  background-color: #e0f7f5;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.value-icon i {
-  font-size: 1.8rem;
-  color: #00796b;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-footer {
-  background-color: #009688;
-  color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.footer-links a {
-  color: #ffffff;
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--green);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
+  transition: background 0.3s;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.btn:hover {
+  background-color: #4b983e;
 }
-
-/* Responsive Adjustments */
-@media (min-width: 768px) {
-  .mission-content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .mission-text {
-    flex: 0 0 55%;
-  }
-
-  .mission-image {
-    flex: 0 0 40%;
-  }
-}
-
-
