@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: row; /* Default to horizontal layout */
     gap: 1.5rem;
+     text-align: center;
 }
 
 .nav-links a {
