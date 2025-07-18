@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SkillReform NG – Training Programs</title>
-  <link rel="stylesheet" href="training.css" />
-  <script defer src="menu.js"></script> <!-- for toggle script -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillReform NG – Training Programs</title>
+    <link rel="stylesheet" href="training.css" />
+    <script defer src="menu.js"></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-flex">
-      <img src="images/logo.png" alt="SkillReform Logo" class="logo" />
-      
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      
-      <nav id="nav-menu" class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about us.html">About</a></li>
-          <li><a href="Training.html" class="active">Trainings</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="SkillReform Logo" class="logo" />
+            </a>
+            
+            <button class="hamburger" 
+                    id="hamburger" 
+                    aria-label="Toggle navigation menu" 
+                    aria-controls="nav-menu" 
+                    aria-expanded="false">
+                &#9776;
+            </button>
+            
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about%20us.html">About</a></li>
+                    <li><a href="Training.html" class="active">Trainings</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Find Skill-Based Trainings Nationwide</h1>
-      <p>Explore verified learning programs and grow your future-ready skills across Nigeria.</p>
-    </div>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Find Skill-Based Trainings Nationwide</h1>
+                <p>Explore verified learning programs and grow your future-ready skills across Nigeria.</p>
+            </div>
+        </section>
 
-  <!-- Trainings Section -->
-  <section class="trainings-section">
-    <div class="container">
-      <h2>Ongoing & Upcoming Trainings</h2>
+        <section class="trainings-section">
+            <div class="container">
+                <h2 class="section-title">Ongoing & Upcoming Trainings</h2>
 
-      <!-- Search Bar -->
-      <div class="search-bar">
-        <input type="text" placeholder="Search trainings by name, location, or host...">
-        <button type="submit">Search</button>
-      </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search trainings by name, location, or host...">
+                    <button type="submit">Search</button>
+                </div>
 
-      <!-- Training Cards -->
-      <div class="training-card">
-        <img src="images/digital marketing.jpg" alt="Remote Training" class="training-img">
-        <h3>Remote Work Essentials</h3>
-        <p>Start Date: July 29, 2025</p>
-        <p>Location: Abuja</p>
-        <p>Hosted by: YouthNG</p>
-        <a href="#" class="btn">Apply Now</a>
-      </div>
+                <div class="trainings-grid">
+                    <div class="training-card">
+                        <img src="images/digital%20marketing.jpg" alt="Remote Training" class="training-img">
+                        <h3>Remote Work Essentials</h3>
+                        <p>Start Date: July 29, 2025</p>
+                        <p>Location: Abuja</p>
+                        <p>Hosted by: YouthNG</p>
+                        <a href="#" class="btn">Apply Now</a>
+                    </div>
 
-      <div class="training-card">
-        <img src="images/4.jpg" alt="Tech for Women Program" class="training-img">
-        <h3>Tech for Women Program</h3>
-        <p>Start Date: July 29, 2025</p>
-        <p>Location: Abuja</p>
-        <p>Hosted by: WomenInTech NG</p>
-        <a href="#" class="btn">Sign Up</a>
-      </div>
+                    <div class="training-card">
+                        <img src="images/4.jpg" alt="Tech for Women Program" class="training-img">
+                        <h3>Tech for Women Program</h3>
+                        <p>Start Date: July 29, 2025</p>
+                        <p>Location: Abuja</p>
+                        <p>Hosted by: WomenInTech NG</p>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
 
-      <div class="training-card">
-        <img src="images/3.jpg" alt="CV Writing & Job Prep Class" class="training-img">
-        <h3>CV Writing & Job Prep Class</h3>
-        <p>Start Date: Ongoing</p>
-        <p>Location: Lagos</p>
-        <p>Hosted by: CareerBuilders</p>
-        <a href="#" class="btn">Learn More</a>
-      </div>
+                    <div class="training-card">
+                        <img src="images/3.jpg" alt="CV Writing & Job Prep Class" class="training-img">
+                        <h3>CV Writing & Job Prep Class</h3>
+                        <p>Start Date: Ongoing</p>
+                        <p>Location: Lagos</p>
+                        <p>Hosted by: CareerBuilders</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
 
-      <!-- Pagination -->
-      <div class="pagination">
-        <a href="#">&laquo; Prev</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Next &raquo;</a>
-      </div>
-    </div>
-  </section>
+                <p id="no-results" style="text-align: center; display: none; margin: 2rem 0;">No trainings found matching your search.</p>
+
+                <div class="pagination">
+                    <a href="#">&laquo; Prev</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next &raquo;</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
