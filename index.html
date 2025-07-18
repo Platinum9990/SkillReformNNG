@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SkillReform NG</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css" />
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="./Index.html" class="logo">
-                    <img src="images/logo.png" alt="SkillReform NG Logo" />
-                </a>
-                <ul class="nav-links">
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="./Training.html">Trainings</a></li>
-                    <li><a href="./about us.html">About</a></li>
-                    <li><a href="./Contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SkillReform NG Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./Training.html">Trainings</a></li>
+                <li><a href="./about us.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
 
+<main>
     <section class="hero">
         <div class="hero-overlay">
             <h1>Empowering Nigerians through verified, hands-on training programs.</h1>
@@ -34,20 +39,23 @@
         </div>
     </section>
 
-   <section class="split-cta-section three-columns"> <div class="split-cta-item learners-cta">
+    <section class="split-cta-section three-columns">
+        <div class="split-cta-item learners-cta">
             <div class="cta-overlay">
                 <h3>Ready to Learn?</h3>
                 <p>Discover verified programs tailored for your growth and career.</p>
                 <a href="#trainings" class="btn-primary"><span>Explore Trainings</span></a>
             </div>
         </div>
-        <div class="split-cta-item trainers-cta-individual"> <div class="cta-overlay">
+        <div class="split-cta-item trainers-cta-individual">
+            <div class="cta-overlay">
                 <h3>Are You a Trainer?</h3>
                 <p>Amplify your reach. List your individual training programs with us!</p>
                 <a href="https://forms.gle/nHT6cQTWLXoCzwgs8" class="btn-primary is-alt"><span>Submit My Program</span></a>
             </div>
         </div>
-        <div class="split-cta-item organizations-cta"> <div class="cta-overlay">
+        <div class="split-cta-item organizations-cta">
+            <div class="cta-overlay">
                 <h3>For Organizations & Partners</h3>
                 <p>Expand your impact. Partner with us for wider program promotion.</p>
                 <a href="https://forms.gle/nHT6cQTWLXoCzwgs8" class="btn-primary"><span>Partner With Us</span></a>
@@ -55,7 +63,7 @@
         </div>
     </section>
 
-   <section class="problem">
+    <section class="problem">
         <div class="container">
             <h2 class="section-title">The Challenge & Our Solution</h2>
             <div class="problem-solution-flow">
@@ -70,10 +78,10 @@
                     <span class="icon"><i class="fa-solid fa-shield-halved"></i></span> <h3>Trust Deficit</h3>
                     <p>Nigerians struggle to verify program legitimacy and quality.</p>
                 </div>
-                 <div class="flow-connector">
+                <div class="flow-connector">
                     <span class="connector-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="connector-line"></span>
                 </div>
-                 <div class="flow-item problem-state">
+                <div class="flow-item problem-state">
                     <span class="icon"><i class="fa-solid fa-earth-africa"></i></span> <h3>Limited Reach</h3>
                     <p>Talented trainers and NGOs lack a unified platform for learners.</p>
                 </div>
@@ -95,7 +103,7 @@
                 <h3>Empowering a Skilled Nigerian Workforce.</h3>
                 <p>SkillReform NG is born from a deep understanding of Nigeria's talent landscape. We believe in unlocking the potential within every Nigerian by providing a trusted, centralized platform to discover and access life-changing, verified training programs. We're building the future of skills, one empowered individual at a time.</p>
                 <div class="vision-buttons">
-                    <a href="./about us.html" class="btn-primary is-alt"><span>Learn More About Us</span></a>
+                    <a href="#" class="btn-primary is-alt"><span>Learn More About Us</span></a>
                     <a href="#" class="btn-primary"><span>Join Our Community</span></a>
                 </div>
             </div>
@@ -135,82 +143,78 @@
             <h2 class="section-title">Featured Trainings</h2>
             <div class="featured-programs">
                 <div class="program-card">
-    <img src="images/web.jpg" alt="Web Development" />
-    <div class="program-card-content">
-        <h3>Web Development</h3>
-        <p class="program-organizer">By: TechInnovate Hub</p> <p class="program-deadline">Apply by: 15 Aug 2025</p> <p>Learn modern web technologies and build your own projects from scratch. Get ready for a rewarding career!</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Launch Your Career!</h4>
-        <p>90% employment rate after certification</p>
-    </div>
-</div>
-
-<div class="program-card">
-    <img src="images/job.jpg" alt="Tailoring" />
-    <div class="program-card-content">
-        <h3>Tailoring & Fashion</h3>
-        <p class="program-organizer">By: Creative Threads Academy</p> <p class="program-deadline">Apply by: 30 Sep 2025</p> <p>Master the art of sewing and design to launch your fashion business with confidence and style.</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Create & Innovate!</h4>
-        <p>Build your own fashion brand</p>
-    </div>
-</div>
-
-<div class="program-card">
-    <img src="images/hair.jpg" alt="Beauty & Cosmetology" />
-    <div class="program-card-content">
-        <h3>Beauty & Cosmetology</h3>
-        <p class="program-organizer">By: GlowUp Institute</p> <p class="program-deadline">Apply by: 10 Oct 2025</p> <p>Develop practical beauty skills to start or grow your salon career, from makeup to hair styling.</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Master the Craft!</h4>
-        <p>Become a certified beauty professional</p>
-    </div>
-</div>
-
-<div class="program-card">
-    <img src="images/Agric-tech.jpg" alt="Agric-Tech Training" />
-    <div class="program-card-content">
-        <h3>Agric-Tech Innovation</h3>
-        <p class="program-organizer">By: AgriFuture Labs</p> <p class="program-deadline">Apply by: 01 Nov 2025</p> <p>Explore modern agricultural techniques and technology for sustainable farming and food security.</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Cultivate Success!</h4>
-        <p>Drive innovation in agriculture</p>
-    </div>
-</div>
-
-<div class="program-card">
-    <img src="images/digital marketing.jpg" alt="Digital Marketing" />
-    <div class="program-card-content">
-        <h3>Digital Marketing</h3>
-        <p class="program-organizer">By: Digital Edge Academy</p> <p class="program-deadline">Apply by: 20 Nov 2025</p> <p>Learn essential strategies for online promotion, SEO, social media, and content marketing.</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Amplify Your Reach!</h4>
-        <p>Become a digital growth expert</p>
-    </div>
-</div>
-
-<div class="program-card">
-    <img src="images/handicrafts and art.jpg" alt="Handicrafts & Arts" />
-    <div class="program-card-content">
-        <h3>Handicrafts & Arts</h3>
-        <p class="program-organizer">By: Artisan Collective NG</p> <p class="program-deadline">Apply by: 10 Dec 2025</p> <p>Unleash your creativity and master various traditional and contemporary art forms for unique products.</p>
-        <a href="#" class="btn-primary"><span>Sign Up</span></a>
-    </div>
-    <div class="card-outcome-overlay">
-        <h4>Art Your Way!</h4>
-        <p>Turn your passion into profit</p>
-    </div>
-</div>
+                    <img src="images/web.jpg" alt="Web Development" />
+                    <div class="program-card-content">
+                        <h3>Web Development</h3>
+                        <p class="program-organizer">By: TechInnovate Hub</p> <p class="program-deadline">Apply by: 15 Aug 2025</p> <p>Learn modern web technologies and build your own projects from scratch. Get ready for a rewarding career!</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Launch Your Career!</h4>
+                        <p>90% employment rate after certification</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="images/job.jpg" alt="Tailoring" />
+                    <div class="program-card-content">
+                        <h3>Tailoring & Fashion</h3>
+                        <p class="program-organizer">By: Creative Threads Academy</p> <p class="program-deadline">Apply by: 30 Sep 2025</p> <p>Master the art of sewing and design to launch your fashion business with confidence and style.</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Create & Innovate!</h4>
+                        <p>Build your own fashion brand</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="images/hair.jpg" alt="Beauty & Cosmetology" />
+                    <div class="program-card-content">
+                        <h3>Beauty & Cosmetology</h3>
+                        <p class="program-organizer">By: GlowUp Institute</p> <p class="program-deadline">Apply by: 10 Oct 2025</p> <p>Develop practical beauty skills to start or grow your salon career, from makeup to hair styling.</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Master the Craft!</h4>
+                        <p>Become a certified beauty professional</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="images/Agric-tech.jpg" alt="Agric-Tech Training" />
+                    <div class="program-card-content">
+                        <h3>Agric-Tech Innovation</h3>
+                        <p class="program-organizer">By: AgriFuture Labs</p> <p class="program-deadline">Apply by: 01 Nov 2025</p> <p>Explore modern agricultural techniques and technology for sustainable farming and food security.</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Cultivate Success!</h4>
+                        <p>Drive innovation in agriculture</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="images/digital marketing.jpg" alt="Digital Marketing" />
+                    <div class="program-card-content">
+                        <h3>Digital Marketing</h3>
+                        <p class="program-organizer">By: Digital Edge Academy</p> <p class="program-deadline">Apply by: 20 Nov 2025</p> <p>Learn essential strategies for online promotion, SEO, social media, and content marketing.</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Amplify Your Reach!</h4>
+                        <p>Become a digital growth expert</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="images/handicrafts and art.jpg" alt="Handicrafts & Arts" />
+                    <div class="program-card-content">
+                        <h3>Handicrafts & Arts</h3>
+                        <p class="program-organizer">By: Artisan Collective NG</p> <p class="program-deadline">Apply by: 10 Dec 2025</p> <p>Unleash your creativity and master various traditional and contemporary art forms for unique products.</p>
+                        <a href="#" class="btn-primary"><span>Sign Up</span></a>
+                    </div>
+                    <div class="card-outcome-overlay">
+                        <h4>Art Your Way!</h4>
+                        <p>Turn your passion into profit</p>
+                    </div>
+                </div>
+            </div>
             <a href="./Training.html" class="btn-primary"><span>View All Trainings</span></a>
         </div>
     </section>
@@ -229,19 +233,20 @@
             <a href="#" class="btn-primary"><span>View Full Gallery</span></a>
         </div>
     </section>
+</main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 SkillReform NG. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SkillReform NG. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </ul>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/dfa26488d0.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/dfa26488d0.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
