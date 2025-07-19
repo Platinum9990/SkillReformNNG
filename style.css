@@ -136,9 +136,51 @@ nav-links a:hover,
     background: none;
     border: none;
     cursor: pointer;
-    color: var(-- --primary-blueblue);
-    text-align:left;
+    color: var(--primary-blue);
+    position: left;
 }
+@media (max-width: 768px) { /* Smaller tablets and large phones */
+    .navbar .container {
+        flex-direction: row; /* Keep content in a row (logo and hamburger) */
+        justify-content: space-between; /* Push logo to left, hamburger to right */
+        align-items: center; /* Vertically center logo and hamburger */
+        padding: 15px 20px; /* Adjust padding for mobile view */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .nav-links {
+        display: none; /* Hide the full nav links by default on mobile */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        gap: 10px;
+        position: absolute; /* Position relative to the navbar */
+        top: 100%; /* Place it right below the navbar */
+        left: 0;
+        background-color: var(--background-white); /* Solid background for the menu when open */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        z-index: 998; /* Below the hamburger but above page content */
+    }
+    .nav-links.active { /* This class will be toggled by JavaScript to show the menu */
+        display: flex;
+    }
+
+    /* Styles for the hamburger icon itself */
+    .navbar-toggle {
+        display: block; /* Make hamburger visible on mobile */
+        font-size: 2rem;
+        color: var(--dark-text);
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999; /* Ensure it's clickable above the collapsing menu */
+    }
+
+    /* ... rest of your media query rules for 768px ... */
+}
+
 /* --- Hero Section --- */
 .hero {
     position: relative;
