@@ -11,21 +11,36 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
             <div class="container">
-                <a href="./index.html" class="logo">
-                    <img src="images/logo.png" alt="SkillReform NG Logo" />
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="SkillReform Logo" style="width: 120px;">
                 </a>
-                <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Trainings</a></li> <li><a href="./about us.html">About</a></li> <li><a href="./Contact.html" class="active">Contact</a></li> </ul>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Training.html">Trainings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
-    <section class="page-hero contact-hero">
-        <div class="hero-overlay">
-            <h1>Get in Touch with SkillReform NG </h1>
+ in Touch with SkillReform NG </h1>
             <p>We're here to help! Reach out to us for any inquiries, partnerships, or support.</p>
         </div>
     </section>
