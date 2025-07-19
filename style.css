@@ -152,6 +152,7 @@ nav-links a:hover,
         display: none; /* Hide the full nav links by default on mobile */
         flex-direction: column;
         align-items: center;
+        text-align: center;
         width: 100%;
         margin-top: 15px;
         gap: 10px;
@@ -180,7 +181,6 @@ nav-links a:hover,
 
     /* ... rest of your media query rules for 768px ... */
 }
-
 /* --- Hero Section --- */
 .hero {
     position: relative;
