@@ -99,15 +99,17 @@ p {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    gap: 1.5rem; /* Adjusted gap for better spacing */
     margin: 0; /* Remove default ul margin */
 }
 
 .nav-links li a {
     color: var(--dark-text);
-    font-weight: 600;
+    font-weight: 500;
     padding: 5px 0;
     position: relative;
+     transition: color 0.3s ease;
 }
 
 .nav-links li a::after {
@@ -122,25 +124,20 @@ p {
     transition: width 0.3s ease, left 0.3s ease, transform 0.3s ease;
 }
 
-.nav-links li a:hover::after,
-.nav-links li a.active::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
+nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-green);
 }
 
-/* Responsive Navbar (Hamburger menu integration placeholder) */
-.navbar-toggle {
-    display: none;
+
+.hamburger {
+    display: none; /* Hidden by default on desktop */
     font-size: 2rem;
-    color: var(--dark-text);
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1001;
+    color: var(-- --primary-blueblue);
 }
-
-
 /* --- Hero Section --- */
 .hero {
     position: relative;
