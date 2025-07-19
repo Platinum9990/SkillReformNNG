@@ -137,6 +137,7 @@ nav-links a:hover,
     border: none;
     cursor: pointer;
     color: var(-- --primary-blueblue);
+    text-align:left;
 }
 /* --- Hero Section --- */
 .hero {
